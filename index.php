@@ -28,10 +28,16 @@
         //echo json_encode($search);
         
         //Carrega um usuario usando o login e a senha
-       $usuario = new Usuario();
-       $usuario->login("root","!@#$");
+       //$usuario = new Usuario();
+       //$usuario->login("root","!@#$");
        
-       echo $usuario;
+      // echo $usuario;
+        
+      // para inserir um novo usuario no banco de dados
+        $aluno = new Usuario("aluno","@luno");
+        $aluno->insert();
+        
+        echo $aluno;
         ?>
-    </body
+    </body>
 </html>
