@@ -34,10 +34,18 @@
       // echo $usuario;
         
       // para inserir um novo usuario no banco de dados
-        $aluno = new Usuario("aluno","@luno");
-        $aluno->insert();
+       // $aluno = new Usuario("aluno","@luno");
+       // $aluno->insert();
+       //echo $aluno;
         
-        echo $aluno;
+        //
+        $usuario = new Usuario();
+        
+        $usuario->loadById(9);
+        
+        $usuario->update("Ewerton","@teste");
+        
+        echo $usuario;
         ?>
     </body>
 </html>
