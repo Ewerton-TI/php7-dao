@@ -38,12 +38,19 @@
        // $aluno->insert();
        //echo $aluno;
         
+        //Fazer um update no usuario do banco de dados
+        //$usuario = new Usuario();
+        //$usuario->loadById(9);
+        //$usuario->update("Ewerton","@teste");
+         //echo $usuario;
+        
         //
+        
         $usuario = new Usuario();
         
-        $usuario->loadById(9);
+        $usuario->loadById(6);
         
-        $usuario->update("Ewerton","@teste");
+        $usuario->delete();
         
         echo $usuario;
         ?>
